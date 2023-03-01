@@ -102,50 +102,64 @@ body {
 
 
 p {
-  color: white;
-  font-family: 'Source Sans Pro', sans-serif;
+  font-family: 'Champagne & Limousines', sans-serif; 
+  font-size: 18px; 
 }
 
 h1 {
+  font-family: 'Champagne & Limousines Bold', sans-serif;
+  font-size: 40px;
+  font-weight: 300;
+}
+
+h2 {
+  font-family: 'Champagne & Limousines Bold', sans-serif;
+  font-size: 35px;
+  font-weight: 100;
+}
+
+h3 {
   font-family: 'Champagne & Limousines Bold', sans-serif;
   font-size: 30px;
   font-weight: 100;
 }
 
-h2 {
-  font-family: 'Quicksand', sans-serif;
-  font-size: 30px;
-  font-weight: 100;
-}
-
-h3 {
-  font-family: 'Quicksand', sans-serif;
-  font-size: 20px;
-  font-weight: 100;
-}
-
 h4 {
-  font-family: 'Quicksand', sans-serif;
-  font-size: 18px;
+  font-family: 'Champagne & Limousines Bold', sans-serif;
+  font-size: 25px;
   font-weight: 200;
 }
 
 h5 {
-  font-family: 'Quicksand', sans-serif;
-  font-size: 16px;
+  font-family: 'Champagne & Limousines Bold', sans-serif;
+  font-size: 20px;
   font-weight: 200;
 }
 
 h6 {
-  font-family: 'Quicksand', sans-serif;
-  font-size: 16px;
+  ffont-family: 'Champagne & Limousines Bold', sans-serif;
+  font-size: 18px;
   font-weight: 200;
+}
+
+/* Hyper Links Styles Here */
+
+a {
+  color: #4E6E81;
+  text-decoration: none;
+  font-family: 'Champagne & Limousines Bold Italic';
+  font-size: 18px;
+}
+
+.hyper-links {
+  color: #a97237;
+  
 }
 
 
 /* Styling Setting */
 
-/* header styling */
+/* The Choose Path CTA Starts Here */
 
 header {
   display: flex;
@@ -178,7 +192,7 @@ header a:hover {
   background-color: #F9DBBB;
 }
 
-
+/* Media Queries - The Choose Path CTA Styles Here */
 
 @media screen and (min-width: 1000px) {
   header {
@@ -235,15 +249,6 @@ header a:hover {
 }
 
 
-/*Choose Path Section   */
-.your-path {
-  display: flex;
-  flex-direction: column;
-  background-color: #ffffff; 
-  padding-top: 50px;
-  padding-bottom: 50px;
-}
-
 .path-a {
   
   padding-top: 60px;
@@ -270,7 +275,7 @@ header a:hover {
 .path-button  {
   display: inline-block;
 
-  width: 250px;
+  width: 180px;
   background-color: #2E3840;
   color: #ffffff;
   padding: 15px 32px;
@@ -285,38 +290,96 @@ header a:hover {
   background-color: #4E6E81;
 }
 
-/* Choose Digital Presence*/
+/* Digital Presence CTA Styles Here  */
+
+#digital-presence {
+  background-color: #F9DBBB;
+  padding: 15px;
+}
+
 .presence {
-  background-color: skyblue;
-  padding-top: 50px;
+  /* display: flex;
+  flex-direction: column;
+  align-items: center; */
+  margin: auto;
+}
+
+.presence-item-1,.presence-item-2 {
+  flex: 1;
 }
 
 .presence-item-1 {
-  background-color: midnightblue;
-  color: white;
-  width: 90%;
+  background-color: #4E6E81;
+  width: 95vw;
+  border-radius: 20px 20px 2px 2px;  
+}
+
+.presence-item-1 img {
+  width: 350px;
+  height: auto;
   margin: auto;
-  padding-top: 100px;
-  padding-left: 40px;
-  padding-right: 40px;
-  padding-bottom: 100px;
-  text-align: center;
 }
 
 .presence-item-2 {
-  padding-top: 100px;
-  padding-left: 40px;
-  padding-right: 40px;
-  padding-bottom: 100px;
+  color: #4E6E81;
+  width: 95vw;
+  height: auto;
+  padding: 50px 20px;
+  border-radius: 2px 2px 20px 20px;
+  box-shadow: #2E3840 3px 3px 5px;
 }
 
+.presence-item-1 h2 {
+  color: #4E6E81;
+  margin: auto;
+}
 
+.presence-item-1 p {
+  color: #4E6E81;
+  margin: auto;
+}
 
-/* .button-container {
-  padding-top: 20px;
-  padding-bottom: 50px;
-  width: 100vw;
-} */
+/* Media Queries - Digital Presence CTA Styles Here  */
+@media screen and (min-width: 1000px) {
+
+  #digital-presence {
+    background-color: #ffffff;
+    border-top: solid 1px #dee4e7;
+    padding: 30px;
+  }
+
+  .presence {
+    display: flex;
+    justify-content: center;
+    width: 80vw;
+  }
+
+  .presence:hover {
+    box-shadow: #dee4e7 1px 1px 1px;
+  }
+
+  .presence-item-1,.presence-item-2 {
+    flex: 1;
+  }
+
+  .presence-item-1 {
+    background-color: #e9eff2;
+    border-radius: 5px 5px 5px 5px;  
+  }
+
+  .presence-item-1 img {
+    width: 500px;
+    height: auto;
+    margin: auto;
+  }
+
+  .presence-item-2 {
+    border-radius: 5px 5px 5px 5px; 
+    box-shadow: #dee4e7 0px 0px 0px; 
+  }
+
+}
+
 
 .button  {
   width: 250px;
