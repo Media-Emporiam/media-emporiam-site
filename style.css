@@ -1,5 +1,23 @@
+/* Custom-Fonts Here */
+
 @font-face {
   font-family: 'Champagne & Limousines';
+  src: url('fonts/Champagne-&-Limousines.ttf');
+}
+
+
+@font-face {
+  font-family: 'Champagne & Limousines Italic';
+  src: url('fonts/Champagne-&-Limousines-Italic.ttf');
+}
+
+@font-face {
+  font-family: 'Champagne & Limousines Bold';
+  src: url('fonts/Champagne-&-Limousines-Bold.ttf');
+}
+
+@font-face {
+  font-family: 'Champagne & Limousines Bold Italic';
   src: url('fonts/Champagne-&-Limousines.ttf');
 }
 
@@ -78,17 +96,19 @@ select {
   }
 }
 
+body {
+  font-family: 'Champagne & Limousines', sans-serif;
+}
 
 
-
-/* p {
+p {
   color: white;
   font-family: 'Source Sans Pro', sans-serif;
 }
 
 h1 {
-  font-family: 'Quicksand', sans-serif;
-  font-size: 50px;
+  font-family: 'Champagne & Limousines Bold', sans-serif;
+  font-size: 30px;
   font-weight: 100;
 }
 
@@ -120,7 +140,7 @@ h6 {
   font-family: 'Quicksand', sans-serif;
   font-size: 16px;
   font-weight: 200;
-} */
+}
 
 
 /* Styling Setting */
@@ -158,6 +178,35 @@ header a {
     padding-right: 60px;
   }
 
+  header img {
+    width: 80px;
+    height: auto;
+    margin-bottom: -70px;
+  }
+
+
+  .choose-path {
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    padding-top: 60px;
+
+  }
+
+  .path-a,.path-b {
+    flex: 1;
+  }
+
+  .path-a img {
+    width: 100px;
+  }
+
+  .path-b h1 {
+  font-family: 'Champagne & Limousines Bold', sans-serif;
+  font-size: 50px;
+  font-weight: 100;
+  }
+
 }
 
 
@@ -178,7 +227,7 @@ header a {
 
 .path-a img {
 
-  width: 500px;
+  width: 70%;
   height: auto;
   margin: auto;
 }
@@ -191,6 +240,24 @@ header a {
   text-align: center;
   height: auto;
   
+}
+
+.path-button  {
+  display: inline-block;
+
+  width: 250px;
+  background-color: #2E3840;
+  color: #ffffff;
+  padding: 15px 32px;
+  border-radius: 5px;
+  text-decoration: none;
+  font-size: 16px;
+  margin:30px auto;
+  text-align: center;
+}
+
+.path-button:hover {
+  background-color: #4E6E81;
 }
 
 /* Choose Digital Presence*/
@@ -237,4 +304,9 @@ header a {
   margin:0 auto;
   text-align: center;
 }
+
+.button:hover {
+  background-color: #4E6E81;
+}
+
 
