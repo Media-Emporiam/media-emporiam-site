@@ -149,13 +149,14 @@ h6 {
 
 header {
   display: block;
-  position: fixed;
-  top:0;
+  /* position: fixed;
+  top:0; */
   background-color: #2E3840;
   width: 100vw;
 }
 
 header img {
+  width: 50px;
   padding: 10px;
 }
 
@@ -168,6 +169,8 @@ header a {
   color: white;
   padding: 10px;
 }
+
+
 
 @media screen and (min-width: 1000px) {
   header {
