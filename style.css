@@ -1,11 +1,7 @@
 @font-face {
-  font-family: 'museo_sans100', sans-serif;
-  src: url('fonts/museo_sans_ssv/museosans-100-webfont.woff2') format('woff2'),
-       url('fonts/museo_sans_ssv/museosans-100-webfont.woff2') format('woff');
-  font-weight: normal;
-  font-style: normal;
-  
-  }
+  font-family: 'Champagne & Limousines';
+  src: url('fonts/Champagne-&-Limousines.ttf');
+}
 
 /* Box sizing rules */
 *,
@@ -85,7 +81,7 @@ select {
 
 
 
-p {
+/* p {
   color: white;
   font-family: 'Source Sans Pro', sans-serif;
 }
@@ -124,7 +120,7 @@ h6 {
   font-family: 'Quicksand', sans-serif;
   font-size: 16px;
   font-weight: 200;
-}
+} */
 
 
 /* Styling Setting */
