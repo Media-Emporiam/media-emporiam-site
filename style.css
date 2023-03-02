@@ -1,3 +1,4 @@
+
 /* Custom-Fonts Here */
 
 @font-face {
@@ -98,12 +99,18 @@ select {
 
 body {
   font-family: 'Champagne & Limousines', sans-serif;
+  padding: 0;
+  margin: 0;
 }
 
+p,h1,h2,h3,h4,h5,h6 {
+  color: #4E6E81;
+}
 
 p {
   font-family: 'Champagne & Limousines', sans-serif; 
   font-size: 18px; 
+  color: #2E3840;
 }
 
 h1 {
@@ -147,7 +154,7 @@ h6 {
 a {
   color: #4E6E81;
   text-decoration: none;
-  font-family: 'Champagne & Limousines Bold Italic';
+  font-family: 'Champagne & Limousines Bold';
   font-size: 18px;
 }
 
@@ -165,7 +172,7 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background-color: #2E3840;
+  background-color: #4E6E81;
   width: 100vw;
   padding-right: 30px;
 }
@@ -181,15 +188,13 @@ header h4 {
 
 header a {
   text-decoration: none;
-  background-color: #4E6E81;
-  border-radius: 5px;
-  color: #f0f3f6;
-  padding: 12px;
+  color: #dee4e7;
+  padding: 14px;
 }
 
 header a:hover {
-  color: #2E3840;
-  background-color: #F9DBBB;
+  color: #F9DBBB;
+  border-bottom:solid 3px #F9DBBB;
 }
 
 /* Media Queries - The Choose Path CTA Styles Here */
@@ -199,8 +204,8 @@ header a:hover {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: #2E3840;
-    padding: 10px;
+    background-color: #4E6E81;
+    /* padding: 5px; */
     padding-right: 60px;
   }
 
@@ -212,17 +217,19 @@ header a:hover {
   }
 
   header a {
-    color: white;
+    color: #dee4e7;
     background-color: transparent;
     font-size: 16px;
+    padding: 11px;
   }
 
   header a:hover {
-    color: #4E6E81;
+    color: #F9DBBB;
     background-color: transparent;
-    border-bottom: solid 2px #4E6E81;
+    border-bottom: solid 3px #F9DBBB;
     border-radius: 0;
   }
+  
 
   .choose-path {
     display: flex;
@@ -268,15 +275,13 @@ header a:hover {
   padding-right:10px;
   color: #2E3840;
   text-align: center;
-  height: auto;
-  
+  height: auto; 
 }
 
 .path-button  {
   display: inline-block;
-
   width: 180px;
-  background-color: #2E3840;
+  background-color: #4E6E81;
   color: #ffffff;
   padding: 15px 32px;
   border-radius: 5px;
@@ -287,12 +292,13 @@ header a:hover {
 }
 
 .path-button:hover {
-  background-color: #4E6E81;
+  color: #4E6E81;
+  background-color: #F9DBBB ;
 }
 
 /* Digital Presence CTA Styles Here  */
 
-#digital-presence {
+#digital-presence,#web-development,#social-media,#boutique {
   background-color: #dee4e7;
   padding: 15px;
 }
@@ -318,7 +324,6 @@ header a:hover {
 }
 
 .presence-item-2 {
-  color: #4E6E81;
   width: 95vw;
   height: auto;
   padding: 50px 20px;
@@ -327,19 +332,48 @@ header a:hover {
 }
 
 .presence-item-1 h2 {
-  color: #4E6E81;
   margin: auto;
 }
 
 .presence-item-1 p {
-  color: #4E6E81;
+  margin: auto;
+}
+
+.web-item-1 {
+  background-color: #F9DBBB;
+}
+
+.social-item-1 {
+  background-color: #2E3840;
+}
+
+.subscription-service {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  height: 400px;
+  margin-top: 80px;
+  margin-bottom: 30px;
+}
+
+.subscription-service h1 {
+  font-size: 50px;
+
+}
+
+.subscription-service img {
+  width: 300px;
+  height: auto;
+  border: solid 5px #4E6E81;
+  border-radius: 5px;
   margin: auto;
 }
 
 /* Media Queries - Digital Presence CTA Styles Here  */
 @media screen and (min-width: 1000px) {
 
-  #digital-presence {
+  #digital-presence,#web-development,#social-media {
     background-color: #ffffff;
     border-top: solid 1px #dee4e7;
     padding: 30px;
@@ -375,23 +409,50 @@ header a:hover {
     box-shadow: #dee4e7 0px 0px 0px; 
   }
 
+  .button  {
+    display: inline-block;
+    width: 170px;
+    background-color: #4E6E81;
+    color: #ffffff;
+    padding: 15px 32px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-size: 16px;
+    margin:0 auto;
+    margin-top: 30px;
+    text-align: center;
+  }
+  
+  .button:hover {
+    background-color: #F9DBBB;
+    color: #4E6E81;
+  }
+
+  .web-item-1 {
+    background-color: #F9DBBB;
+  }
+
 }
 
 
 .button  {
-  width: 250px;
-  background-color: #2E3840;
+  display: inline-block;
+  width: 170px;
+  background-color: #4E6E81;
   color: #ffffff;
   padding: 15px 32px;
   border-radius: 5px;
   text-decoration: none;
   font-size: 16px;
-  margin:0 auto;
+  /* margin:0 auto; */
+  margin-top: 30px;
+  margin-left: 100px;
   text-align: center;
 }
 
 .button:hover {
-  background-color: #4E6E81;
+  background-color: #F9DBBB;
+  color: #4E6E81;
 }
 
 
