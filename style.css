@@ -164,6 +164,30 @@ a {
 }
 
 
+
+.button  {
+  display: inline-block;
+  width: 170px;
+  background-color: #4E6E81;
+  color: #ffffff;
+  padding: 15px 32px;
+  border-radius: 5px;
+  text-decoration: none;
+  font-size: 16px;
+  /* margin:0 auto; */
+  margin-top: 30px;
+  margin-left: 100px;
+  text-align: center;
+}
+
+.button:hover {
+  background-color: #F9DBBB;
+  color: #4E6E81;
+}
+
+
+
+
 /* Styling Setting */
 
 /* The Choose Path CTA Starts Here */
@@ -298,7 +322,7 @@ header a:hover {
 
 /* Digital Presence CTA Styles Here  */
 
-#digital-presence,#web-development,#social-media,#boutique {
+#digital-presence,#web-development,#social-media,#mobile {
   background-color: #dee4e7;
   padding: 15px;
 }
@@ -347,28 +371,7 @@ header a:hover {
   background-color: #2E3840;
 }
 
-.subscription-service {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  text-align: center;
-  height: 400px;
-  margin-top: 80px;
-  margin-bottom: 30px;
-}
 
-.subscription-service h1 {
-  font-size: 50px;
-
-}
-
-.subscription-service img {
-  width: 300px;
-  height: auto;
-  border: solid 5px #4E6E81;
-  border-radius: 5px;
-  margin: auto;
-}
 
 /* Media Queries - Digital Presence CTA Styles Here  */
 @media screen and (min-width: 1000px) {
@@ -435,24 +438,69 @@ header a:hover {
 }
 
 
-.button  {
-  display: inline-block;
-  width: 170px;
-  background-color: #4E6E81;
-  color: #ffffff;
-  padding: 15px 32px;
-  border-radius: 5px;
-  text-decoration: none;
-  font-size: 16px;
-  /* margin:0 auto; */
-  margin-top: 30px;
-  margin-left: 100px;
-  text-align: center;
+/* Subscription List Styles Here */
+
+.price-container {
+  display: flex;
 }
 
-.button:hover {
-  background-color: #F9DBBB;
-  color: #4E6E81;
+  /* Create three columns of equal width */
+.columns {
+float: left;
+width: 33.3%;
+padding: 8px;
 }
 
+/* Style the list */
+.price {
+list-style-type: none;
+border: 1px solid #eee;
+margin: 0;
+padding: 0;
+-webkit-transition: 0.3s;
+transition: 0.3s;
+}
 
+/* Add shadows on hover */
+.price:hover {
+box-shadow: 0 8px 12px 0 rgba(0,0,0,0.2)
+}
+
+/* Pricing header */
+.price .header {
+background-color: #111;
+color: white;
+font-size: 25px;
+}
+
+/* List items */
+.price li {
+border-bottom: 1px solid #eee;
+padding: 20px;
+text-align: center;
+}
+
+/* Grey list item */
+.price .grey {
+background-color: #eee;
+font-size: 20px;
+}
+
+/* The "Sign Up" button */
+.button {
+background-color: #4E6E81;
+border: none;
+color: white;
+padding: 10px 25px;
+text-align: center;
+text-decoration: none;
+font-size: 18px;
+}
+
+/* Change the width of the three columns to 100%
+(to stack horizontally on small screens) */
+@media only screen and (max-width: 600px) {
+.columns {
+  width: 100%;
+}
+}
