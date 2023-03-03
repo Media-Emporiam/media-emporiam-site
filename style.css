@@ -196,9 +196,10 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background-color: #4E6E81;
+  background-color: #ffffff;
   width: 100vw;
   padding-right: 30px;
+  box-shadow: #dee4e7 2px 2px 2px;
 }
 
 header img {
@@ -212,7 +213,7 @@ header h4 {
 
 header a {
   text-decoration: none;
-  color: #dee4e7;
+  color: #4E6E81;
   padding: 17px;
 }
 
@@ -228,23 +229,23 @@ header a:hover {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: #4E6E81;
-    padding: 5px;
+    /* padding: 5px; */
     padding-right: 60px;
   }
 
   header img {
-    width: 80px;
+    width: 70px;
     height: auto;
     margin-left: 20px;
-    margin-bottom: -57px;
+   
   }
 
   header a {
-    color: #dee4e7;
+    color: #4E6E81;
     background-color: transparent;
-    font-size: 16px;
-    padding: 11px;
+    font-size: 18px;
+    padding-bottom: 30px;
+    /* padding: 11px; */
   }
 
   header a:hover {
