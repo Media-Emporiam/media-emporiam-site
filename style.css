@@ -163,8 +163,6 @@ a {
   
 }
 
-
-
 .button  {
   display: inline-block;
   width: 170px;
@@ -207,14 +205,18 @@ header img {
   padding: 10px;
 }
 
+
 header h4 {
+  font-size: 16px;
   margin-left: 10px;
 }
 
 header a {
   text-decoration: none;
+  font-size: 16px;
   color: #4E6E81;
-  padding: 17px;
+  padding: 10px;
+  padding-bottom: 17px;
 }
 
 header a:hover {
@@ -245,7 +247,6 @@ header a:hover {
     background-color: transparent;
     font-size: 18px;
     padding-bottom: 30px;
-    /* padding: 11px; */
   }
 
   header a:hover {
@@ -261,7 +262,6 @@ header a:hover {
     flex-direction: row-reverse;
     align-items: center;
     padding-top: 60px;
-
   }
 
   .path-a,.path-b {
@@ -282,13 +282,11 @@ header a:hover {
 
 
 .path-a {
-  
   padding-top: 60px;
 }
 
 
 .path-a img {
-
   width: 70%;
   height: auto;
   margin: auto;
@@ -325,7 +323,7 @@ header a:hover {
 
 #digital-presence,#web-development,#social-media,#mobile {
   background-color: #dee4e7;
-  padding: 15px;
+  padding: 10px;
 }
 
 .presence {
