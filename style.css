@@ -376,7 +376,7 @@ header a:hover {
 /* Media Queries - Digital Presence CTA Styles Here  */
 @media screen and (min-width: 1000px) {
 
-  #digital-presence,#web-development,#social-media {
+  #digital-presence,#web-development,#social-media,#mobile,#boutique {
     background-color: #ffffff;
     border-top: solid 1px #dee4e7;
     padding: 30px;
@@ -439,16 +439,22 @@ header a:hover {
 
 
 /* Subscription List Styles Here */
+#boutique {
+  text-align: center;
+  padding-top: 50px;
+  padding-bottom: 30px;
+}
 
 .price-container {
   display: flex;
+  margin-top: 20px;
 }
 
   /* Create three columns of equal width */
 .columns {
 float: left;
 width: 33.3%;
-padding: 8px;
+padding: 8px;                 
 }
 
 /* Style the list */
@@ -459,6 +465,7 @@ margin: 0;
 padding: 0;
 -webkit-transition: 0.3s;
 transition: 0.3s;
+
 }
 
 /* Add shadows on hover */
@@ -468,7 +475,7 @@ box-shadow: 0 8px 12px 0 rgba(0,0,0,0.2)
 
 /* Pricing header */
 .price .header {
-background-color: #111;
+background-color: #4E6E81;
 color: white;
 font-size: 25px;
 }
