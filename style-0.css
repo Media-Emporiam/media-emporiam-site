@@ -111,10 +111,11 @@ a:not([class]) {
 
 
     --ff-primary: 'Champagne & Limousines Bold';
-    --ff-body:'Champagne & Limousines'; 
+    --ff-regular: 'Champagne & Limousines Bold';
+
 
     --ff-heading: var(-ff--primary);
-    --ff-body: var(--ff-body);
+    --ff-body: var(--ff-regular);
 
     --fw-regular: 100;
     --fw-semi-bold: 500;
@@ -209,7 +210,7 @@ a:not([class]) {
   }
 
   .fs-regular-body  {
-    fontsize: var(--fs-body);
+    font-size: var(--fs-body);
   }
 
   .fs-nav {
@@ -224,8 +225,8 @@ a:not([class]) {
     font-family: var(--ff-primary);
 }
 
-.ff-body {
-  font-family: var(--ff-body);
+.ff-regular {
+  font-family: var(--ff-regular);
 }
 
 /* Page Styling Begins Here */
@@ -240,4 +241,59 @@ header {
   box-shadow: #dee4e7 2px 2px 2px;
   width: 100vw;
   padding-right: 30px;
+}
+
+header img {
+  width: 40px;
+  height: auto;
+  /* padding: 8px; */
+  margin: 7px;
+}
+
+nav a {
+  /* display: inline-block; */
+  text-decoration: none;
+  padding: 5px;
+  padding-bottom: 21px;
+}
+
+nav a:hover {
+  color: #F9DBBB;
+  border-bottom: solid 3px #F9DBBB;
+}
+
+@media screen and (min-width: 1000px) {
+  header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* padding: 5px; */
+    padding-right: 60px;
+    padding-top: 10px;
+    padding-bottom: 5px;
+  }
+
+  header img {
+    width: 50px;
+    height: auto;
+    margin-left: 20px;
+    
+   
+  }
+
+  nav a {
+    background-color: transparent;
+    font-size: 18px;
+    padding: 35px;
+    padding-bottom: 31px;
+  }
+
+  nav a:hover {
+    color: #F9DBBB;
+    background-color: transparent;
+    border-bottom: solid 3px #F9DBBB;
+    border-radius: 0;
+  }
+
+  
 }
