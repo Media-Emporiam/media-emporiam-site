@@ -326,4 +326,35 @@ nav a:hover {
   border-radius: 5px;
   margin-top: 20px;
   margin-bottom: 20px;
+  box-shadow: #dee4e7 2px 2px 2px;
+}
+
+.path-button:hover {
+  color: #4E6E81;
+  background-color: #F9DBBB ;
+}
+
+@media screen and (min-width: 900px) {
+
+  .choose-path {
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    padding-top: 60px;
+  }
+
+  .path-a,.path-b {
+    flex: 1;
+  }
+
+  .path-a img {
+    width: 470px;
+    height: auto;
+  }
+
+  .path-b h1 {
+  font-family: 'Champagne & Limousines Bold', sans-serif;
+  font-size: 50px;
+  font-weight: 700;
+  }
 }
