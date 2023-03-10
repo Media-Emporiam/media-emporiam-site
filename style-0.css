@@ -232,7 +232,7 @@ a:not([class]) {
 /* Page Styling Begins Here */
 
 
-/* Hero Section: Choose Path CTA Sytle Settings */
+/* Header Section Sytle Settings */
 header {
   display: flex;
   justify-content: space-between;
@@ -263,7 +263,7 @@ nav a:hover {
   border-bottom: solid 3px #F9DBBB;
 }
 
-@media screen and (min-width: 1000px) {
+@media screen and (min-width: 900px) {
   header {
     display: flex;
     justify-content: space-between;
@@ -295,4 +295,35 @@ nav a:hover {
   }
 
   
+}
+
+
+/* Hero Section: Choose Path CTA Sytle Settings */
+
+.path-a {
+  padding-top: 70px;
+}
+
+.path-a img {
+  width: 70%;
+  height: auto;
+  margin: auto;
+}
+
+.path-b {
+  padding-top:10px;
+  padding-left:50px; 
+  padding-bottom:10px;
+  padding-right:50px;
+  text-align: center;
+  height: auto; 
+}
+
+.path-button {
+  display: inline-block;
+  padding: 15px 20px;
+  text-decoration: none;
+  border-radius: 5px;
+  margin-top: 20px;
+  margin-bottom: 20px;
 }
