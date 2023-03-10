@@ -248,6 +248,7 @@ header img {
   height: auto;
   /* padding: 8px; */
   margin: 7px;
+  box-shadow: #dee4e7 2px 2px 2px;
 }
 
 nav a {
@@ -269,7 +270,7 @@ nav a:hover {
     align-items: center;
     /* padding: 5px; */
     padding-right: 60px;
-    padding-top: 10px;
+    padding-top: 5px;
     padding-bottom: 5px;
   }
 
@@ -277,8 +278,6 @@ nav a:hover {
     width: 50px;
     height: auto;
     margin-left: 20px;
-    
-   
   }
 
   nav a {
