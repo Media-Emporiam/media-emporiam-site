@@ -16,3 +16,8 @@ Media Emporiam Website
 
 ### Fonts
 Champagne & Limousines
+
+
+storyset illustrations by:
+
+<a href="https://storyset.com/marketing">Marketing illustrations by Storyset</a>

@@ -105,6 +105,7 @@ body {
 
 p,h1,h2,h3,h4,h5,h6 {
   color: #4E6E81;
+  
 }
 
 p {
@@ -174,7 +175,7 @@ a {
   font-size: 16px;
   /* margin:0 auto; */
   margin-top: 30px;
-  margin-left: 100px;
+  /* margin-left: 100px; */
   text-align: center;
 }
 
@@ -371,6 +372,20 @@ header a:hover {
   background-color: #2E3840;
 }
 
+.services {
+  display: flex;
+  justify-content: space-around;
+  gap: 20px;
+  padding: 50px;
+}
+
+.service-item {
+  flex: 2;
+  border: solid 1px #2E3840;
+  border-radius: 5px;
+}
+
+
 
 
 /* Media Queries - Digital Presence CTA Styles Here  */
@@ -439,11 +454,38 @@ header a:hover {
 
 
 /* Subscription List Styles Here */
+
 #boutique {
   text-align: center;
-  padding-top: 50px;
-  padding-bottom: 30px;
+  /* padding-top: 50px;
+  padding-bottom: 30px; */
 }
+
+
+.subscription-cta {
+  /* background-image: url(images/pricing-plans-pana.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 700px;
+  padding: 50px; */
+  background-color: #dee4e7;
+  margin: 0;
+  padding-bottom: 50px;
+  
+}
+
+.subscription-cta h1 {
+
+}
+
+.subscription-cta img {
+  width: 70%;
+  height: auto;
+  margin: auto;
+}
+
+
+Pricelist 
 
 .price-container {
   display: flex;
