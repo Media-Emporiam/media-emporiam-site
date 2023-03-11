@@ -258,6 +258,7 @@ a {
   margin-top: 30px;
   /* margin-left: 100px; */
   text-align: center;
+  box-shadow: #dee4e7 2px 2px 2px;
 }
 
 .button:hover {
@@ -487,7 +488,8 @@ nav a:hover {
 
 .presence-item-1 {
   width: 95vw;
-  border-radius: 20px 20px 2px 2px;  
+  border-radius: 20px 20px 2px 2px; 
+  box-shadow: #2E3840 1px 1px 2px; 
 }
 
 .presence-item-1 img {
@@ -501,7 +503,7 @@ nav a:hover {
   height: auto;
   padding: 50px 20px;
   border-radius: 2px 2px 20px 20px;
-  box-shadow: #2E3840 3px 3px 5px;
+  box-shadow: #2E3840 1px 2px 2px;
 }
 
 .presence-item-1 h2 {
@@ -549,4 +551,103 @@ nav a:hover {
   /* added bg using the preset value using a class */
 }
 
+/* Media Queries - Digital Presence CTA Styles Here  */
+@media screen and (min-width: 1000px) {
+
+  #digital-presence,#web-development,#social-media,#mobile,#boutique,#photography {
+    background-color: #ffffff;
+    border-top: solid 1px #dee4e7;
+    padding: 30px;
+  }
+
+  .presence {
+    display: flex;
+    justify-content: center;
+    width: 80vw;
+  }
+
+  .presence:hover {
+    box-shadow: #dee4e7 1px 1px 1px;
+  }
+
+  .presence-item-1,.presence-item-2 {
+    flex: 1;
+  }
+
+  .presence-item-1 {
+    background-color: #e9eff2;
+    border-radius: 5px 5px 5px 5px;  
+    box-shadow: #2E3840 0px 0px 0px;
+  }
+
+  .presence-item-1 img {
+    width: 500px;
+    height: auto;
+    margin: auto;
+  }
+
+  .presence-item-2 {
+    border-radius: 5px 5px 5px 5px; 
+    box-shadow: #dee4e7 0px 0px 0px; 
+    padding-top: 90px;
+  }
+
+  .button  {
+    display: inline-block;
+    width: 170px;
+    background-color: #4E6E81;
+    color: #ffffff;
+    padding: 15px 32px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-size: 16px;
+    margin:0 auto;
+    margin-top: 30px;
+    text-align: center;
+    box-shadow: #dee4e7 2px 2px 2px;
+  }
+  
+  .button:hover {
+    background-color: #F9DBBB;
+    color: #4E6E81;
+  }
+
+  .web-item-1 {
+    background-color: #F9DBBB;
+  }
+
+}
+
+/* Subscription List Styles Here */
+
+#boutique {
+  text-align: center;
+  /* padding-top: 50px;
+  padding-bottom: 30px; */
+}
+
+
+.subscription-cta {
+  background-color: #dee4e7;
+  margin: 0;
+  padding-bottom: 50px;
+  
+}
+
+.subscription-cta h1 {
+
+}
+
+.subscription-cta img {
+  width: 70%;
+  height: auto;
+  margin: auto;
+}
+
+footer {
+  background-color: #2E3840;
+  text-align: center;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
 
