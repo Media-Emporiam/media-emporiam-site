@@ -286,9 +286,14 @@ header img {
   box-shadow: #dee4e7 2px 2px 2px;
 }
 
+nav{
+  padding-left: 30px;
+}
+
 nav a {
   /* display: inline-block; */
   text-decoration: none;
+  margin-right: 20px;
   padding: 5px;
   padding-bottom: 21px;
 }
