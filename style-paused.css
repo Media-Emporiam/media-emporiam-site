@@ -1,0 +1,555 @@
+
+/* Custom-Fonts Here */
+
+@font-face {
+  font-family: 'Champagne & Limousines';
+  src: url('fonts/Champagne-&-Limousines.ttf');
+}
+
+
+@font-face {
+  font-family: 'Champagne & Limousines Italic';
+  src: url('fonts/Champagne-&-Limousines-Italic.ttf');
+}
+
+@font-face {
+  font-family: 'Champagne & Limousines Bold';
+  src: url('fonts/Champagne-&-Limousines-Bold.ttf');
+}
+
+@font-face {
+  font-family: 'Champagne & Limousines Bold Italic';
+  src: url('fonts/Champagne-&-Limousines.ttf');
+}
+
+/* Box sizing rules */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* Remove default margin */
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+figure,
+blockquote,
+dl,
+dd {
+  margin: 0;
+}
+
+/* Remove list styles on ul, ol elements with a list role, which suggests default styling will be removed */
+ul[role='list'],
+ol[role='list'] {
+  list-style: none;
+}
+
+/* Set core root defaults */
+html:focus-within {
+  scroll-behavior: smooth;
+}
+
+/* Set core body defaults */
+body {
+  min-height: 100vh;
+  text-rendering: optimizeSpeed;
+  line-height: 1.5;
+}
+
+/* A elements that don't have a class get default styles */
+a:not([class]) {
+  text-decoration-skip-ink: auto;
+}
+
+/* Make images easier to work with */
+img,
+picture {
+  max-width: 100%;
+  display: block;
+}
+
+/* Inherit fonts for inputs and buttons */
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+/* Remove all animations, transitions and smooth scroll for people that prefer not to see them */
+@media (prefers-reduced-motion: reduce) {
+  html:focus-within {
+   scroll-behavior: auto;
+  }
+  
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+body {
+  font-family: 'Champagne & Limousines', sans-serif;
+  padding: 0;
+  margin: 0;
+}
+
+p,h1,h2,h3,h4,h5,h6 {
+  color: #4E6E81;
+  
+}
+
+p {
+  font-family: 'Champagne & Limousines', sans-serif; 
+  font-size: 18px; 
+  color: #2E3840;
+}
+
+h1 {
+  font-family: 'Champagne & Limousines Bold', sans-serif;
+  font-size: 40px;
+  font-weight: 300;
+}
+
+h2 {
+  font-family: 'Champagne & Limousines Bold', sans-serif;
+  font-size: 35px;
+  font-weight: 100;
+}
+
+h3 {
+  font-family: 'Champagne & Limousines Bold', sans-serif;
+  font-size: 30px;
+  font-weight: 100;
+}
+
+h4 {
+  font-family: 'Champagne & Limousines Bold', sans-serif;
+  font-size: 25px;
+  font-weight: 200;
+}
+
+h5 {
+  font-family: 'Champagne & Limousines Bold', sans-serif;
+  font-size: 20px;
+  font-weight: 200;
+}
+
+h6 {
+  font-family: 'Champagne & Limousines Bold', sans-serif;
+  font-size: 18px;
+  font-weight: 200;
+}
+
+/* Hyper Links Styles Here */
+
+a {
+  color: #4E6E81;
+  text-decoration: none;
+  font-family: 'Champagne & Limousines Bold';
+  font-size: 18px;
+}
+
+.hyper-links {
+  color: #a97237;
+  
+}
+
+.button  {
+  display: inline-block;
+  width: 170px;
+  background-color: #4E6E81;
+  color: #ffffff;
+  padding: 15px 32px;
+  border-radius: 5px;
+  text-decoration: none;
+  font-size: 16px;
+  /* margin:0 auto; */
+  margin-top: 30px;
+  /* margin-left: 100px; */
+  text-align: center;
+}
+
+.button:hover {
+  background-color: #F9DBBB;
+  color: #4E6E81;
+}
+
+
+
+
+/* Styling Setting */
+
+/* The Choose Path CTA Starts Here */
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: fixed;
+  background-color: #ffffff;
+  width: 100vw;
+  padding-right: 30px;
+  box-shadow: #dee4e7 2px 2px 2px;
+}
+
+header img {
+  width: 50px;
+  padding: 10px;
+}
+
+
+header h4 {
+  font-size: 16px;
+  margin-left: 10px;
+}
+
+header a {
+  text-decoration: none;
+  font-size: 16px;
+  color: #4E6E81;
+  padding: 10px;
+  padding-bottom: 17px;
+}
+
+header a:hover {
+  color: #F9DBBB;
+  border-bottom:solid 3px #F9DBBB;
+}
+
+/* Media Queries - The Choose Path CTA Styles Here */
+
+@media screen and (min-width: 1000px) {
+  header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* padding: 5px; */
+    padding-right: 60px;
+  }
+
+  header img {
+    width: 70px;
+    height: auto;
+    margin-left: 20px;
+   
+  }
+
+  header a {
+    color: #4E6E81;
+    background-color: transparent;
+    font-size: 18px;
+    padding-bottom: 30px;
+  }
+
+  header a:hover {
+    color: #F9DBBB;
+    background-color: transparent;
+    border-bottom: solid 3px #F9DBBB;
+    border-radius: 0;
+  }
+  
+
+  .choose-path {
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    padding-top: 60px;
+  }
+
+  .path-a,.path-b {
+    flex: 1;
+  }
+
+  .path-a img {
+    width: 100px;
+  }
+
+  .path-b h1 {
+  font-family: 'Champagne & Limousines Bold', sans-serif;
+  font-size: 50px;
+  font-weight: 100;
+  }
+
+}
+
+
+.path-a {
+  padding-top: 60px;
+}
+
+
+.path-a img {
+  width: 70%;
+  height: auto;
+  margin: auto;
+}
+.path-b {
+  padding-top:10px;
+  padding-left:10px; 
+  padding-bottom:10px;
+  padding-right:10px;
+  color: #2E3840;
+  text-align: center;
+  height: auto; 
+}
+
+.path-button  {
+  display: inline-block;
+  width: 180px;
+  background-color: #4E6E81;
+  color: #ffffff;
+  padding: 15px 32px;
+  border-radius: 5px;
+  text-decoration: none;
+  font-size: 16px;
+  margin:30px auto;
+  text-align: center;
+}
+
+.path-button:hover {
+  color: #4E6E81;
+  background-color: #F9DBBB ;
+}
+
+/* Digital Presence CTA Styles Here  */
+
+#digital-presence,#web-development,#social-media,#mobile {
+  background-color: #dee4e7;
+  padding: 10px;
+}
+
+.presence {
+  margin: auto;
+}
+
+.presence-item-1,.presence-item-2 {
+  flex: 1;
+}
+
+.presence-item-1 {
+  background-color: #4E6E81;
+  width: 95vw;
+  border-radius: 20px 20px 2px 2px;  
+}
+
+.presence-item-1 img {
+  width: 350px;
+  height: auto;
+  margin: auto;
+}
+
+.presence-item-2 {
+  width: 95vw;
+  height: auto;
+  padding: 50px 20px;
+  border-radius: 2px 2px 20px 20px;
+  box-shadow: #2E3840 3px 3px 5px;
+}
+
+.presence-item-1 h2 {
+  margin: auto;
+}
+
+.presence-item-1 p {
+  margin: auto;
+}
+
+.web-item-1 {
+  background-color: #F9DBBB;
+}
+
+.social-item-1 {
+  background-color: #2E3840;
+}
+
+.services {
+  display: flex;
+  justify-content: space-around;
+  gap: 20px;
+  padding: 50px;
+}
+
+.service-item {
+  flex: 2;
+  border: solid 1px #2E3840;
+  border-radius: 5px;
+}
+
+
+
+
+/* Media Queries - Digital Presence CTA Styles Here  */
+@media screen and (min-width: 1000px) {
+
+  #digital-presence,#web-development,#social-media,#mobile,#boutique {
+    background-color: #ffffff;
+    border-top: solid 1px #dee4e7;
+    padding: 30px;
+  }
+
+  .presence {
+    display: flex;
+    justify-content: center;
+    width: 80vw;
+  }
+
+  .presence:hover {
+    box-shadow: #dee4e7 1px 1px 1px;
+  }
+
+  .presence-item-1,.presence-item-2 {
+    flex: 1;
+  }
+
+  .presence-item-1 {
+    background-color: #e9eff2;
+    border-radius: 5px 5px 5px 5px;  
+  }
+
+  .presence-item-1 img {
+    width: 500px;
+    height: auto;
+    margin: auto;
+  }
+
+  .presence-item-2 {
+    border-radius: 5px 5px 5px 5px; 
+    box-shadow: #dee4e7 0px 0px 0px; 
+  }
+
+  .button  {
+    display: inline-block;
+    width: 170px;
+    background-color: #4E6E81;
+    color: #ffffff;
+    padding: 15px 32px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-size: 16px;
+    margin:0 auto;
+    margin-top: 30px;
+    text-align: center;
+  }
+  
+  .button:hover {
+    background-color: #F9DBBB;
+    color: #4E6E81;
+  }
+
+  .web-item-1 {
+    background-color: #F9DBBB;
+  }
+
+}
+
+
+/* Subscription List Styles Here */
+
+#boutique {
+  text-align: center;
+  /* padding-top: 50px;
+  padding-bottom: 30px; */
+}
+
+
+.subscription-cta {
+  /* background-image: url(images/pricing-plans-pana.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 700px;
+  padding: 50px; */
+  background-color: #dee4e7;
+  margin: 0;
+  padding-bottom: 50px;
+  
+}
+
+.subscription-cta h1 {
+
+}
+
+.subscription-cta img {
+  width: 70%;
+  height: auto;
+  margin: auto;
+}
+
+
+Pricelist 
+
+.price-container {
+  display: flex;
+  margin-top: 20px;
+}
+
+  /* Create three columns of equal width */
+.columns {
+float: left;
+width: 33.3%;
+padding: 8px;                 
+}
+
+/* Style the list */
+.price {
+list-style-type: none;
+border: 1px solid #eee;
+margin: 0;
+padding: 0;
+-webkit-transition: 0.3s;
+transition: 0.3s;
+
+}
+
+/* Add shadows on hover */
+.price:hover {
+box-shadow: 0 8px 12px 0 rgba(0,0,0,0.2)
+}
+
+/* Pricing header */
+.price .header {
+background-color: #4E6E81;
+color: white;
+font-size: 25px;
+}
+
+/* List items */
+.price li {
+border-bottom: 1px solid #eee;
+padding: 20px;
+text-align: center;
+}
+
+/* Grey list item */
+.price .grey {
+background-color: #eee;
+font-size: 20px;
+}
+
+/* The "Sign Up" button */
+.button {
+background-color: #4E6E81;
+border: none;
+color: white;
+padding: 10px 25px;
+text-align: center;
+text-decoration: none;
+font-size: 18px;
+}
+
+/* Change the width of the three columns to 100%
+(to stack horizontally on small screens) */
+@media only screen and (max-width: 600px) {
+.columns {
+  width: 100%;
+}
+}
