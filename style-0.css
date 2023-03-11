@@ -231,6 +231,41 @@ a:not([class]) {
 
 /* Page Styling Begins Here */
 
+/* Hyper Links Styles Here */
+
+a {
+  color: #4E6E81;
+  text-decoration: none;
+  font-family: 'Champagne & Limousines Bold';
+  font-size: 18px;
+}
+
+.hyper-links {
+  color: #a97237;
+  
+}
+
+.button  {
+  display: inline-block;
+  width: 170px;
+  background-color: #4E6E81;
+  color: #ffffff;
+  padding: 15px 32px;
+  border-radius: 5px;
+  text-decoration: none;
+  font-size: 16px;
+  /* margin:0 auto; */
+  margin-top: 30px;
+  /* margin-left: 100px; */
+  text-align: center;
+}
+
+.button:hover {
+  background-color: #F9DBBB;
+  color: #4E6E81;
+}
+
+
 
 /* Header Section Sytle Settings */
 header {
@@ -439,4 +474,79 @@ nav a:hover {
    
   }
 }
+
+/* Digital Presence CTA Styles Here  */
+
+#digital-presence,#web-development,#social-media,#mobile,#photography {
+  padding: 10px;
+}
+
+.presence {
+  margin: auto;
+}
+
+.presence-item-1 {
+  width: 95vw;
+  border-radius: 20px 20px 2px 2px;  
+}
+
+.presence-item-1 img {
+  width: 350px;
+  height: auto;
+  margin: auto;
+}
+
+.presence-item-2 {
+  width: 95vw;
+  height: auto;
+  padding: 50px 20px;
+  border-radius: 2px 2px 20px 20px;
+  box-shadow: #2E3840 3px 3px 5px;
+}
+
+.presence-item-1 h2 {
+  margin: auto;
+  text-decoration: none;
+}
+
+.presence-item-1 p {
+  margin: auto;
+}
+
+.presence a {
+  text-decoration: none;
+}
+
+.presence h2 {
+  color: #4E6E81;
+
+}
+
+.presence h4 {
+
+}
+
+.presence p {
+
+}
+
+.presence-item-2 .button {
+  display: inline-block;
+  margin-left: 120px;
+}
+
+
+/* Design Your Website Styles Here  */
+
+.web-item-1 {
+  /* background-color: #F9DBBB; */
+  /* added bg using the preset value using a class */
+}
+
+/* Engage Your Base with Social Media */
+.social-item-1 {
+  /* background-color: #2E3840; */
+  /* added bg using the preset value using a class */
+}
+
 
