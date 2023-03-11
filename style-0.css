@@ -111,7 +111,7 @@ a:not([class]) {
 
 
     --ff-primary: 'Champagne & Limousines Bold';
-    --ff-regular: 'Champagne & Limousines Bold';
+    --ff-regular: 'Champagne & Limousines';
 
 
     --ff-heading: var(-ff--primary);
@@ -240,7 +240,6 @@ header {
   position: fixed;
   box-shadow: #dee4e7 2px 2px 2px;
   width: 100vw;
-  padding-right: 30px;
 }
 
 header img {
@@ -300,6 +299,11 @@ nav a:hover {
 
 /* Hero Section: Choose Path CTA Sytle Settings */
 
+.choose-path {
+  padding-right: 30px;
+  border-bottom: solid 1px #dee4e7;
+}
+
 .path-a {
   padding-top: 70px;
 }
@@ -357,4 +361,41 @@ nav a:hover {
   font-size: 50px;
   font-weight: 700;
   }
+}
+
+
+/* Features Section Design Setting */
+#services-feature h1 {
+  text-align: center;
+  padding-top: 10px;
+  padding-bottom: 20px;
+}
+
+.services {
+  padding-bottom: 20px;
+}
+
+.services a {
+  text-decoration: none;
+  /* color: #4E6E81; */
+}
+
+.service-item {
+  width: 300px;
+  margin: auto;
+  border-radius: 5px;
+  margin-bottom: 20px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 20px;
+  padding-right: 10px;
+}
+
+.service-item img {
+  width: 250px;
+  margin: auto;
+}
+
+.service-item h4 {
+  
 }
