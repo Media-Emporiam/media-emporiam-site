@@ -421,7 +421,6 @@ nav a:hover {
     background-color: #F9DBBB;
   }
   
-
   .service-item {
     flex: 1 300px;
     width: 300px;
@@ -432,17 +431,12 @@ nav a:hover {
     padding-bottom: 30px;
     padding-left: 60px;
     padding-right: 60px;
-
-
   }
 
   .services img {
     width: 300px;
     margin: auto;
-    
+   
   }
-
-
-
 }
 
