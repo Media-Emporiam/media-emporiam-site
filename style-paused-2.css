@@ -1,0 +1,726 @@
+/* Reset Settings */
+
+/* Box sizing rules */
+*,
+*::before,
+*::after {
+box-sizing: border-box;
+}
+
+/* Remove default margin */
+* {
+margin: 0;
+padding: 0;
+font: inherit;
+}
+
+/* Remove list styles on ul, ol elements with a list role, which suggests default styling will be removed */
+ul[role='list'],
+ol[role='list'] {
+list-style: none;
+}
+
+/* Set core root defaults */
+html:focus-within {
+scroll-behavior: smooth;
+}
+
+/* Set core body defaults */
+
+html,
+body {
+height: 100%;
+}
+
+body {
+text-rendering: optimizeSpeed;
+line-height: 1.5;
+}
+
+/* A elements that don't have a class get default styles */
+a:not([class]) {
+    text-decoration-skip-ink: auto;
+    }
+    
+    /* Make images easier to work with */
+    img,
+    picture,
+    svg {
+    max-width: 100%;
+    display: block;
+    }
+    
+    
+    /* Remove all animations, transitions and smooth scroll for people that prefer not to see them */
+    @media (prefers-reduced-motion: reduce) {
+    html:focus-within {
+     scroll-behavior: auto;
+    }
+    
+    *,
+    *::before,
+    *::after {
+      animation-duration: 0.01ms !important;
+      animation-iteration-count: 1 !important;
+      transition-duration: 0.01ms !important;
+      scroll-behavior: auto !important;
+    }
+    }
+
+    /* Custom-Fonts Here */
+
+@font-face {
+    font-family: 'Champagne & Limousines';
+    src: url('fonts/Champagne-&-Limousines.ttf');
+  }
+  
+  
+  @font-face {
+    font-family: 'Champagne & Limousines Italic';
+    src: url('fonts/Champagne-&-Limousines-Italic.ttf');
+  }
+  
+  @font-face {
+    font-family: 'Champagne & Limousines Bold';
+    src: url('fonts/Champagne-&-Limousines-Bold.ttf');
+  }
+  
+  @font-face {
+    font-family: 'Champagne & Limousines Bold Italic';
+    src: url('fonts/Champagne-&-Limousines.ttf');
+  }
+
+  /* Style Presets */
+
+ :root {
+    /* Color Presets */
+
+    --clr-primary-400: #2E3840;
+
+    --clr-primary-100: #4E6E81;
+
+    --clr-accent-400: #F9DBBB;
+
+    --clr--accent-100: #dee4e7;
+
+    --clr-neutral-100: #e9eff2;
+
+    --clr-neutral-900: #ffffff;
+
+    --clr-accent-200:#a97237;
+
+
+    --ff-primary: 'Champagne & Limousines Bold';
+    --ff-regular: 'Champagne & Limousines';
+
+
+    --ff-heading: var(-ff--primary);
+    --ff-body: var(--ff-regular);
+
+    --fw-regular: 100;
+    --fw-semi-bold: 500;
+    --fw-bold: 700;
+
+    --fs-100: 1em;
+    --fs-300: 1.125em;
+    --fs-500: 1.250em;
+    --fs-700: 2em;
+
+    --fs-body: var(--fs-100);
+    --fs-primary-heading: var(--fs-700);
+    --fs-secondary-heading: var(--fs-300);
+    --fs-nav: var(--fs-500);
+    --fs-button: var(--fs-300);
+}
+
+@media  (min-width: 50em) {
+  :root {
+    --fs-100: 1em;
+    --fs-700: 3em;
+    --fs-500: 1.500em;
+
+    --fs-body: var(--fs-100);
+    --fs-primary-heading: var(--fs-700);
+    --fs-secondary-heading: var(--fs-500);
+    --fs-nav: var(--fs-300);
+  }
+}
+
+/* Utility classes */
+
+.text-primary-400 {
+    color: var(--clr-primary-400);
+  }
+  
+  .text-primary-100 {
+    color: var(--clr-primary-100);
+  }
+  
+  .text-accent-400 {
+    color: var(--clr-accent-400);
+  }
+  
+  .text-accent-100 {
+    color: var(--clr--accent-100);
+  }
+  
+  .text-neutral-100 {
+    color: var(--clr-neutral-100);
+  }
+  
+  .text-neutral-900 {
+    color: var(--clr-neutral-900);
+  }
+  
+  
+  .bg-primary-400 {
+    background-color: var(--clr-primary-400);
+  }
+  
+  .bg-primary-100 {
+    background-color: var(--clr-primary-100);
+  }
+  
+  .bg-accent-400 {
+    background-color: var(--clr-accent-400);
+  }
+  
+  .bg-accent-100 {
+    background-color: var(--clr-accent-100);
+  }
+  
+  .bg-neutral-100 {
+    background-color: var(--clr-neutral-100);
+  }
+  
+  .bg-neutral-900 {
+    background-color: var(--clr-neutral-900);
+  }
+  
+  .fw-bold { font-weight: var(--fw-bold);}
+  .fw-semi-bold {font-weight: var(--fw-semi-bold);}
+  .fw-regular {font-weight: var(--fw-regular);}
+  
+  .fs-primary-heading {
+    font-size: var(--fs-primary-heading);
+  }
+  
+  .fs-secondary-heading {
+    font-size: var(--fs-secondary-heading);
+  }
+
+  .fs-regular-body  {
+    font-size: var(--fs-body);
+  }
+
+  .fs-nav {
+    font-size: var(--fs-nav);
+  }
+
+  .fs-button {
+    font-size: var(--fs-button);
+  }
+
+  .ff-primary {
+    font-family: var(--ff-primary);
+}
+
+.ff-regular {
+  font-family: var(--ff-regular);
+}
+
+/* Page Styling Begins Here */
+
+/* Hyper Links Styles Here */
+
+a {
+  color: #4E6E81;
+  text-decoration: none;
+  font-family: 'Champagne & Limousines Bold';
+  font-size: 18px;
+}
+
+.hyper-links {
+  color: #a97237;
+  
+}
+
+.button  {
+  display: inline-block;
+  width: 170px;
+  background-color: #4E6E81;
+  color: #ffffff;
+  padding: 15px 32px;
+  border-radius: 5px;
+  text-decoration: none;
+  font-size: 16px;
+  /* margin:0 auto; */
+  margin-top: 30px;
+  /* margin-left: 100px; */
+  text-align: center;
+  box-shadow: #dee4e7 2px 2px 2px;
+}
+
+.button:hover {
+  background-color: #F9DBBB;
+  color: #4E6E81;
+}
+
+
+
+/* Header Section Sytle Settings */
+
+        /* Add a black background color to the top navigation */
+
+
+        .topnav {
+          background-color: #fffff;
+          overflow: hidden;
+          box-shadow: #dee4e7 2px 2px 2px;
+        
+        }
+        
+        /* Style the links inside the navigation bar */
+        .topnav a {
+          float: right;
+          display: block;
+          color: #4E6E81;
+          text-align: center;
+          padding: 14px 16px;
+          text-decoration: none;
+          font-size: 17px;
+        }
+        
+        /* Change the color of links on hover */
+        .topnav a:hover {
+          /* background-color: #ddd; */
+          color: #4E6E81;
+        }
+        
+        /* Add an active class to highlight the current page */
+        .topnav a.active {
+          background-color: #F9DBBB;
+          color: #4E6E81;
+        }
+        
+        /* Hide the link that should open and close the topnav on small screens */
+        .topnav .icon {
+          display: none;
+        }
+        
+        /* When the screen is less than 600 pixels wide, hide all links, except for the first one ("Home"). Show the link that contains should open and close the topnav (.icon) */
+        @media screen and (max-width: 600px) {
+          .topnav a:not(:first-child) {display: none;}
+          .topnav a.icon {
+            float: right;
+            display: block;
+          }
+        }
+        
+        /* The "responsive" class is added to the topnav with JavaScript when the user clicks on the icon. This class makes the topnav look good on small screens (display the links vertically instead of horizontally) */
+        @media screen and (max-width: 600px) {
+          .topnav.responsive {position: relative;}
+          .topnav.responsive a.icon {
+            position: absolute;
+            right: 0;
+            top: 0;
+          }
+          .topnav.responsive a {
+            float: none;
+            display: block;
+            text-align: left;
+          }
+        }
+        
+
+
+/* ============================================ */
+
+/* First Version - Header Section Sytle Settings */
+
+/* header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: fixed;
+  box-shadow: #dee4e7 2px 2px 2px;
+  width: 100vw;
+} */
+
+/* header img {
+  width: 40px;
+  height: auto;
+  margin: 7px;
+  box-shadow: #dee4e7 2px 2px 2px;
+} */
+
+
+/* nav a {
+  text-decoration: none;
+  margin-right: 15px;
+  padding: 2px;
+  padding-bottom: 21px;
+} */
+
+/* nav a:hover {
+  color: #F9DBBB;
+  border-bottom: solid 3px #F9DBBB;
+} */
+
+/* @media screen and (min-width: 900px) {
+  header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-right: 60px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+  } */
+
+/* 
+  header img {
+    width: 50px;
+    height: auto;
+    margin-left: 20px;
+  } */
+
+  /* nav a {
+    background-color: transparent;
+    padding: 35px;
+    padding-bottom: 31px;
+  } */
+  
+
+  /* nav a:hover {
+    color: #F9DBBB;
+    background-color: transparent;
+    border-bottom: solid 3px #F9DBBB;
+    border-radius: 0;
+  }
+
+  
+} */
+
+
+/* ============================================ */
+
+
+/* Hero Section: Choose Path CTA Sytle Settings */
+
+.choose-path {
+  padding-right: 30px;
+  border-bottom: solid 1px #dee4e7;
+}
+
+.path-a {
+  padding-top: 70px;
+}
+
+.path-a img {
+  width: 70%;
+  height: auto;
+  margin: auto;
+}
+
+.path-b {
+  padding-top:10px;
+  padding-left:50px; 
+  padding-bottom:10px;
+  padding-right:50px;
+  text-align: center;
+  height: auto; 
+}
+
+.path-button {
+  display: inline-block;
+  padding: 15px 20px;
+  text-decoration: none;
+  border-radius: 5px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  box-shadow: #dee4e7 2px 2px 2px;
+}
+
+.path-button:hover {
+  color: #4E6E81;
+  background-color: #F9DBBB ;
+}
+
+/* Hero Section Media Queries */
+@media screen and (min-width: 900px) {
+
+  .choose-path {
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    padding-top: 60px;
+  }
+
+  .path-a,.path-b {
+    flex: 1;
+  }
+
+  .path-a img {
+    width: 470px;
+    height: auto;
+  }
+
+  .path-b h1 {
+  font-family: 'Champagne & Limousines Bold', sans-serif;
+  font-size: 50px;
+  font-weight: 700;
+  }
+}
+
+
+/* Features Section Design Setting */
+
+#services-feature h1 {
+  text-align: center;
+  padding-top: 10px;
+  padding-bottom: 20px;
+}
+
+.services {
+  padding-bottom: 20px;
+}
+
+.services a {
+  text-decoration: none;
+  /* color: #4E6E81; */
+}
+
+.service-item {
+  
+  width: 300px;
+  height: auto;
+  margin: auto;
+  border-radius: 5px;
+  margin-bottom: 30px;
+  padding-left: 20px;
+  padding-right: 10px;
+  padding-bottom: 20px;
+  box-shadow: #4E6E81 2px 2px 5px;
+}
+
+.service-item img {
+  width: 250px;
+  margin: auto;
+}
+
+/* Features Section Media Queries */
+
+@media screen and (min-width: 900px) {
+
+  #services-feature h1 {
+    text-align: center;
+    padding-top: 50px;
+    padding-bottom: 60px;
+    background-color: #F9DBBB;
+  }
+  .services {
+    display: flex;
+    justify-content: space-around;
+    gap: 2em;
+    padding-top: 30px;
+    padding-bottom: 50px;
+    padding-left: 50px;
+    padding-right: 50px;
+    background-color: #F9DBBB;
+  }
+  
+  .service-item {
+    flex: 1 300px;
+    width: 300px;
+    height: auto;
+    border-radius: 5px;
+    margin-bottom: 0;
+    padding-top: 0;
+    padding-bottom: 30px;
+    padding-left: 60px;
+    padding-right: 60px;
+  }
+
+  .services img {
+    width: 300px;
+    margin: auto;
+   
+  }
+}
+
+/* Digital Presence CTA Styles Here  */
+
+#digital-presence,#web-development,#social-media,#mobile,#photography {
+  padding: 10px;
+}
+
+.presence {
+  margin: auto;
+}
+
+.presence-item-1 {
+  width: 95vw;
+  border-radius: 20px 20px 2px 2px; 
+  box-shadow: #2E3840 1px 1px 2px; 
+}
+
+.presence-item-1 img {
+  width: 350px;
+  height: auto;
+  margin: auto;
+}
+
+.presence-item-2 {
+  width: 95vw;
+  height: auto;
+  padding: 50px 20px;
+  border-radius: 2px 2px 20px 20px;
+  box-shadow: #2E3840 1px 2px 2px;
+}
+
+.presence-item-1 h2 {
+  margin: auto;
+  text-decoration: none;
+}
+
+.presence-item-1 p {
+  margin: auto;
+}
+
+.presence a {
+  text-decoration: none;
+}
+
+.presence h2 {
+  color: #4E6E81;
+
+}
+
+.presence h4 {
+
+}
+
+.presence p {
+
+}
+
+.presence-item-2 .button {
+  display: inline-block;
+  margin-left: 120px;
+}
+
+
+/* Design Your Website Styles Here  */
+
+.web-item-1 {
+  /* background-color: #F9DBBB; */
+  /* added bg using the preset value using a class */
+}
+
+/* Engage Your Base with Social Media */
+.social-item-1 {
+  /* background-color: #2E3840; */
+  /* added bg using the preset value using a class */
+}
+
+/* Media Queries - Digital Presence CTA Styles Here  */
+@media screen and (min-width: 1000px) {
+
+  #digital-presence,#web-development,#social-media,#mobile,#boutique,#photography {
+    background-color: #ffffff;
+    border-top: solid 1px #dee4e7;
+    padding: 30px;
+  }
+
+  .presence {
+    display: flex;
+    justify-content: center;
+    width: 80vw;
+  }
+
+  .presence:hover {
+    box-shadow: #dee4e7 1px 1px 1px;
+  }
+
+  .presence-item-1,.presence-item-2 {
+    flex: 1;
+  }
+
+  .presence-item-1 {
+    background-color: #e9eff2;
+    border-radius: 5px 5px 5px 5px;  
+    box-shadow: #2E3840 0px 0px 0px;
+  }
+
+  .presence-item-1 img {
+    width: 500px;
+    height: auto;
+    margin: auto;
+  }
+
+  .presence-item-2 {
+    border-radius: 5px 5px 5px 5px; 
+    box-shadow: #dee4e7 0px 0px 0px; 
+    padding-top: 90px;
+  }
+
+  .button  {
+    display: inline-block;
+    width: 170px;
+    background-color: #4E6E81;
+    color: #ffffff;
+    padding: 15px 32px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-size: 16px;
+    margin:0 auto;
+    margin-top: 30px;
+    text-align: center;
+    box-shadow: #dee4e7 2px 2px 2px;
+  }
+  
+  .button:hover {
+    background-color: #F9DBBB;
+    color: #4E6E81;
+  }
+
+  .web-item-1 {
+    background-color: #F9DBBB;
+  }
+
+}
+
+/* Subscription List Styles Here */
+
+#boutique {
+  text-align: center;
+  /* padding-top: 50px;
+  padding-bottom: 30px; */
+}
+
+
+.subscription-cta {
+  background-color: #dee4e7;
+  margin: 0;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  
+}
+
+.subscription-cta h1 {
+
+}
+
+.subscription-cta img {
+  width: 70%;
+  height: auto;
+  margin: auto;
+}
+
+footer {
+  background-color: #2E3840;
+  text-align: center;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+

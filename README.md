@@ -13,6 +13,8 @@ Media Emporiam Website
 
 #2E3840
 
+#ffffff
+
 
 ### Fonts
 Champagne & Limousines
@@ -21,3 +23,8 @@ Champagne & Limousines
 storyset illustrations by:
 
 <a href="https://storyset.com/marketing">Marketing illustrations by Storyset</a>
+
+The CSS preset system courtesy of Kevin Powell
+
+Header courtesy of W3C
+
